@@ -18,6 +18,9 @@
 		0CE815F717A4CE050043AA27 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0CE815F617A4CE050043AA27 /* Default-568h@2x.png */; };
 		0CE815FA17A4CE050043AA27 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0CE815F817A4CE050043AA27 /* MainStoryboard.storyboard */; };
 		0CE815FD17A4CE050043AA27 /* QuizViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CE815FC17A4CE050043AA27 /* QuizViewController.m */; };
+		0CE8160617A4CE230043AA27 /* QuestionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CE8160517A4CE230043AA27 /* QuestionView.m */; };
+		0CE8160A17A4D0B00043AA27 /* QuestionController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CE8160917A4D0B00043AA27 /* QuestionController.m */; };
+		0CE8160E17A4D1EA0043AA27 /* QuestionModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CE8160D17A4D1EA0043AA27 /* QuestionModel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +40,12 @@
 		0CE815F917A4CE050043AA27 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
 		0CE815FB17A4CE050043AA27 /* QuizViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QuizViewController.h; sourceTree = "<group>"; };
 		0CE815FC17A4CE050043AA27 /* QuizViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QuizViewController.m; sourceTree = "<group>"; };
+		0CE8160417A4CE230043AA27 /* QuestionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = QuestionView.h; path = View/QuestionView.h; sourceTree = "<group>"; };
+		0CE8160517A4CE230043AA27 /* QuestionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = QuestionView.m; path = View/QuestionView.m; sourceTree = "<group>"; };
+		0CE8160817A4D0B00043AA27 /* QuestionController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = QuestionController.h; path = Controller/QuestionController.h; sourceTree = "<group>"; };
+		0CE8160917A4D0B00043AA27 /* QuestionController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = QuestionController.m; path = Controller/QuestionController.m; sourceTree = "<group>"; };
+		0CE8160C17A4D1EA0043AA27 /* QuestionModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = QuestionModel.h; path = Model/QuestionModel.h; sourceTree = "<group>"; };
+		0CE8160D17A4D1EA0043AA27 /* QuestionModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = QuestionModel.m; path = Model/QuestionModel.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +92,9 @@
 		0CE815E617A4CE050043AA27 /* Quiz */ = {
 			isa = PBXGroup;
 			children = (
+				0CE8160B17A4D1D20043AA27 /* Model */,
+				0CE8160717A4D08E0043AA27 /* Controller */,
+				0CE8160317A4CE0D0043AA27 /* View */,
 				0CE815EF17A4CE050043AA27 /* QuizAppDelegate.h */,
 				0CE815F017A4CE050043AA27 /* QuizAppDelegate.m */,
 				0CE815F817A4CE050043AA27 /* MainStoryboard.storyboard */,
@@ -105,6 +117,33 @@
 				0CE815F617A4CE050043AA27 /* Default-568h@2x.png */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		0CE8160317A4CE0D0043AA27 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				0CE8160417A4CE230043AA27 /* QuestionView.h */,
+				0CE8160517A4CE230043AA27 /* QuestionView.m */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		0CE8160717A4D08E0043AA27 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				0CE8160817A4D0B00043AA27 /* QuestionController.h */,
+				0CE8160917A4D0B00043AA27 /* QuestionController.m */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		0CE8160B17A4D1D20043AA27 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				0CE8160C17A4D1EA0043AA27 /* QuestionModel.h */,
+				0CE8160D17A4D1EA0043AA27 /* QuestionModel.m */,
+			);
+			name = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -177,6 +216,9 @@
 				0CE815ED17A4CE050043AA27 /* main.m in Sources */,
 				0CE815F117A4CE050043AA27 /* QuizAppDelegate.m in Sources */,
 				0CE815FD17A4CE050043AA27 /* QuizViewController.m in Sources */,
+				0CE8160617A4CE230043AA27 /* QuestionView.m in Sources */,
+				0CE8160A17A4D0B00043AA27 /* QuestionController.m in Sources */,
+				0CE8160E17A4D1EA0043AA27 /* QuestionModel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
